@@ -41,9 +41,9 @@ public class initial {
 					loriObject.addQuantity();
 				}else if(seri[counter]== 4) {
 					truckObject.addQuantity();
-				}else if(seri[counter] <= 0 || seri[counter] => 5){ 
+				}else { 
 					System.out.println("valid number from 1 to 4 only");
-					counter-=1;						 
+					counter--;						 
 				}
 		//}
 			
