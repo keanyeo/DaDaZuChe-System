@@ -28,7 +28,7 @@ public class initial {
 		int[] seri = new int[quantity];
 	
 		
-		for (int counter=0;counter<quantity;counter++) {
+		for (int counter=1;counter<quantity;counter++) {
 			System.out.printf("Insert car model number :");
 			seri[counter] = input.nextInt();
 			
@@ -40,9 +40,11 @@ public class initial {
 					loriObject.addQuantity();
 				}else if(seri[counter]== 4) {
 					truckObject.addQuantity();
-				}else 
+				}else if(seri[counter] <= 0 || seri[counter] => 5){ 
 					System.out.println("valid number from 1 to 4 only");
+					counter-=1;						 
 				}
+			
 		
 		//calculate total				
 		int sum1 = carObject.calSubtotal()*rentDay;
