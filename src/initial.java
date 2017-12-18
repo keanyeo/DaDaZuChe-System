@@ -28,7 +28,8 @@ public class initial {
 		int[] seri = new int[quantity];
 	
 		
-		for (int counter=1;counter<quantity;counter++) {
+		//for (int counter2=1;counter2<quantity;counter2++){
+		for (int counter=0;counter<quantity;counter++) {
 			System.out.printf("Insert car model number :");
 			seri[counter] = input.nextInt();
 			
@@ -44,6 +45,7 @@ public class initial {
 					System.out.println("valid number from 1 to 4 only");
 					counter-=1;						 
 				}
+		//}
 			
 		
 		//calculate total				
