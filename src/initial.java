@@ -31,16 +31,19 @@ public class initial {
 		//for (int counter2=1;counter2<quantity;counter2++){
 		for (int counter=0;counter<quantity;counter++) {
 			System.out.printf("Insert car model number :");
-			seri[counter] = input.nextInt();
-			
+					
 				 if (seri[counter] == 1) {
 					carObject.addQuantity();
+					 seri[counter] = input.nextInt();
 				}else if (seri[counter] == 2) {
 					busObject.addQuantity();
+					 seri[counter] = input.nextInt();
 				}else if (seri[counter]== 3) {
 					loriObject.addQuantity();
+					 seri[counter] = input.nextInt();
 				}else if(seri[counter]== 4) {
 					truckObject.addQuantity();
+					 seri[counter] = input.nextInt();
 				}else if(seri[counter] <= 0 || seri[counter] => 5){ 
 					System.out.println("valid number from 1 to 4 only");
 					counter-=1;						 
