@@ -1,7 +1,8 @@
+package com.rental.world;
 
-public interface transport {
-	
-	public int getLoad();
+public interface Shipment {
+
+	public int getLoadw();
 
 	public void addQuantity();
 
@@ -10,6 +11,5 @@ public interface transport {
 	public int getQuantity();
 
 	public Object getName();
-	
 
 }
